@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Dancing+Script:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nanum+Myeongjo&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nanum+Myeongjo&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.gen-layout{
+    max-width: 1000px;
+    margin: auto;
+}
+body{
+    background-color: black;
+}
+header{
+    background-image: url("./images/le.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid white;
+    font-family: "Inter", sans-serif;
+}
+.inner-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-left{
+    display: flex;
+    gap: 1.1rem;
+}
+.nav-left>a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.nav-left>a:first-child{
+    color: #c3a075;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-left>a:first-child>i{
+    font-size: 10px;
+}
+.nav-mid{
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 100px;
+    height: 100px;
+}
+.nav-mid>img{
+    width: 100%;
+    height: 100%;
+}
+.nav-right{
+    display: flex;
+    gap: 1.6rem;
+}
+.nav-link{
+    display: flex;
+    gap: 1.1rem;
+}
+.nav-link>a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.nav-icon{
+    display: flex;
+    gap: 1.1rem;
+    color: white;
+    font-size: 17px;
+}
+.banner{
+    margin-block: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-details{
+    margin-left: 107px;
+    margin-top: -1rem;
+}
+.banner-details>h3{
+    font-size: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+.banner-details>h3>span{
+    font-size: 45px;
+    color: #c3a075;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+.banner-details>h1{
+    font-size: 80px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+.banner-details>img{
+    margin-left: 258px;
+    width: 190px;
+}
+.banner-details>p{
+    font-size: 13px;
+    color: white;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 2.3rem;
+    opacity: .6;
+    font-family: "Inter", sans-serif;
+}
+.banner-image>img{
+    margin-right: 100px;
+    width: 300px;
+    height: 350px;
+}
+.btn-btn>button{
+    background-color: #c3a075;
+    color: white;
+    text-transform: uppercase;
+    padding-block: .1rem;
+    padding-inline: 1.3rem;
+    border-radius: 3px;
+    border: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    padding-block: 4rem;
+    font-size: 14px;
+}
+.facebook>a{
+    color: white;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+.twitter>a{
+    color: white;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+.youtube>a{
+    color: white;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+.sec-one{
+    background-color: black;
+    margin-block: -21rem;
+}
+.gen-layout2{
+    max-width: 1000px;
+    margin: auto;
+}
+.display-card{
+    margin-block: 21rem;
+    display: flex;
+    gap: 8px;
+    margin-left: 271px;
+}
+.image-card1{
+    width: 250px;
+    height: 200px;
+    border: 2px solid rgba(128, 128, 128, 0);
+    margin-left: 7px;
+}
+.image-card1>img{
+    width: 100%;
+    height: 100%;
+}
+.sec-two{
+    background-image: url("./images/beans\ and\ map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 25rem;
+}
+.our-history{
+    display: flex;
+    margin-left: 267px;
+    gap: 47px;
+}
+.ohd{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-right: 200px;
+}
+.btn2>button{
+    background-color: #c3a075;
+    color: white;
+    text-transform: uppercase;
+    padding-block: .2rem;
+    padding-inline: .8rem;
+    border-radius: 3px;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+.btn2{
+    padding-bottom: 2rem;
+}
+.ohd>h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 38px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.ohd>h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 38px;
+    padding-bottom: 2.8rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+.ohd>p{
+    font-size: 12px;
+    color: white;
+    opacity: .6;
+    font-family: "Inter", sans-serif;
+}
+.line-ohd{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-block: 4rem;
+    gap: 33px;
+}
+.line-ohd>h6{
+    text-transform: uppercase;
+    color: white;
+    opacity: .6;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+.play-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.play-btn>i{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ohd-container{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.btn3>button{
+    background-color: #c3a075;
+    color: white;
+    text-transform: uppercase;
+    padding-block: .5rem;
+    padding-inline: 1.3rem;
+    border-radius: 3px;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+.sec-three{
+    background-image: url("./images/backg3pt2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 4rem;
+}
+.cup-block{
+    display: flex;
+    gap: 10px;
+    margin-left: 170px;
+}
+.cup-card{
+    height: 300px;
+}
+.cup-image{
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+}
+.cup-image>img{
+    width: 100%;
+    height: 100%;
+}
+.cup-card>h6{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white;
+    margin-left: 8px;
+    padding-bottom: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+.cup-card>p{
+    font-size: 12px;
+    color: white;
+    margin-left: 8px;
+    padding-block: .1rem;
+    opacity: .5;
+    font-family: "Inter", sans-serif;
+}
+.gen-layout3{
+    max-width: 750px;
+    margin: auto;
+}
+.sec-four{
+    background-image: url("./images/backg4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 4rem;
+}
+.btn4{
+    margin-left: 46%;
+}
+.btn4>button{
+    background-color: #c3a075;
+    color: white;
+    text-transform: uppercase;
+    padding-block: .3rem;
+    padding-inline: 1.3rem;
+    border-radius: 3px;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+.coffee-opt>h1{
+    font-size: 42px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.3rem;
+    padding-bottom: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+.coffee-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+}
+.coffee-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    height: 70px;
+}
+.coffee-card>h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    margin-left: 8px;
+    padding-block: 1.5rem;
+    margin-right: 38px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.coffee-card>span{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #c3a075;
+    margin-left: 8px;
+    padding-block: 1.5rem;
+    margin-right: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.coffee-image{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    right: 20px;
+}
+.coffee-image>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.sec-five{
+    background-image: url("./images/sec-five.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+}
+.btn5{
+    margin-left: 46%;
+}
+.btn5>button{
+    background-color: #c3a075;
+    color: white;
+    text-transform: uppercase;
+    padding-block: .3rem;
+    padding-inline: .8rem;
+    border-radius: 3px;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+.coffee-beans-opt>h1{
+    font-size: 42px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.3rem;
+    padding-bottom: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+.coffee-beans-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 7rem;
+    margin-left: 290px;
+}
+.coffee-beans-card{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 400px;
+    text-align: center;
+    align-items: center;
+}
+.cb-image{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding-bottom: 1rem;
+}
+.cb-image>img{
+    width: 100%;
+    height: 100%;
+}
+.coffee-beans-card>h6{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: .4rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+.coffee-beans-card>p{
+    opacity: .5;
+    color: white;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 7rem;
+    margin-top: -9rem;
+    margin-left: 340px;
+}
+.number-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: black;
+    position: relative;
+    top: 1.5rem;
+}
+.number-circle>a{
+    text-decoration: none;
+}
+.number-circle>a>h4{
+    color: white;
+}
+hr{
+    color: white;
+}
+.sec-six{
+    background-image: url("./images/cup\ with\ coffee\ beans.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 7rem;
+    padding-block: 7rem;
+}
+.six-container{
+    text-align: center;
+    color: white;
+}
+.six-container>h1{
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+.dq{
+    padding-block: 2.3rem;
+}
+.subs-container{
+    background-image: url("./images/black\ box.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+.sc1{
+    border: 2px solid #c3a075;
+    width: 580px;
+    height: 270px;
+}
+.sc2{
+    border: 2px solid #c3a075;
+    width: 600px;
+    height: 250px;
+    margin-top: 50px;
+    position: relative;
+    bottom: 40px;
+    right: 10px;
+}
+.sc2>h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 2.4rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+.sc2>p{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    margin-top: .8rem;
+    opacity: .5;
+    font-family: "Inter", sans-serif;
+}
+.subscribe{
+    display: flex;
+    gap: 3px;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-input{
+    border-bottom: 1px solid white;
+    width: 350px;
+}
+.subscribe-input>input{
+    border: none;
+    outline: none;
+    background-color: black;
+}
+.subscribe-input>input::placeholder{
+    color: white;
+    opacity: .5;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+.btn6{
+    border: 1px solid #c3a075;
+    background-color: #c3a075;
+    padding-inline: .9rem;
+    padding-block: 2px;
+    cursor: pointer;
+}
+.btn6>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    text-decoration: none;
+}
+.btn6>a>button{
+    border: none;
+    background-color: #c3a075;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+.arrow{
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    border: 1px solid white;
+    position: relative;
+}
+.arrow>h6{
+    width: 80%;
+    height: 80%;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 30%;
+    bottom: 35%;
+}
+.goto{
+    background-image: url("./images/coffee\ b1.png");
+    background-repeat: no-repeat;
+    background-size: var(25rem);
+    background-position: center;
+    margin-block: 9rem;
+    padding-block: 3rem;
+}
+.goto-circle{
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 650px;
+    background-color: black;
+}
+.goto-circle>a{
+    text-decoration: none;
+}
+.goto-circle>a>i{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 27%;
+    left: 20%;
+}
+.goto>hr{
+    margin-top: -25px;
+}
+.goto>h3{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -5rem;
+}
+.phone-no{
+    display: flex;
+    gap: .5rem;
+}
+.phone-icon{
+    width: 12px;
+    height: 12px;
+}
+.phone-icon>i{
+    width: 100%;
+    height: 100%;
+    color: #c3a075;
+}
+.phone-details{
+    display: flex;
+    gap: 5px;
+    color: white;
+}
+.phone-details>h4{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+}
+.phone-details>p{
+    opacity: .5;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+}
+.address{
+    display: flex;
+    gap: .5rem;
+}
+.address-icon{
+    width: 12px;
+    height: 12px;
+}
+.address-icon>i{
+    width: 100%;
+    height: 100%;
+    color: #c3a075;
+}
+.address-details{
+    display: flex;
+    gap: 5px;
+    color: white;
+}
+.address-details>h4{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+}
+.address-details>p{
+    opacity: .5;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+}
+.subscribe2{
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subs-button>a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.subscribe2>input{
+    border: none;
+    outline: none;
+    background-color: black;
+    width: 180px;
+    margin-left: 10px;
+}
+.subscribe2>input::placeholder{
+    color: white;
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+}
+.subs-button>a>button{
+    background-color: black;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+.subscribe-circle{
+    border: 1px solid white;
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+}
+.subscribe-circle>h6{
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    margin-left: 3px;
+}
+.cafena-image{
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    margin-left: 295px;
+    margin-top: 70px;
+}
+.cafena-image>img{
+    height: 100%;
+    width: 100%;
+}
+.info2-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+.info2-details>p{
+    font-size: 12px;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.socials1>a{
+    text-decoration: none;
+    color: white;
+}
+.socials2>a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+.socials2{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials1{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
